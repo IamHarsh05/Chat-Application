@@ -1,0 +1,172 @@
+.rightbar{
+    flex: 4;
+    background: #ffffff;
+}
+
+.rightbarwrapper{
+    margin: 0;
+    padding: 10px 5px;
+}
+
+.birthday{
+    display: flex;
+    align-items: center;
+}
+
+.birth{
+    margin: 0;
+    padding: 0;
+    height: 70px;
+    width: 70px;
+    object-fit: contain;
+}
+
+.btext{
+    font-size: 15px;
+    font-weight: 200;
+}
+
+.ads{
+    margin: 5px 0;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 20px;
+    -webkit-box-shadow: 7px 8px 16px -4px rgba(0,0,0,0.92);
+    -moz-box-shadow: 7px 8px 16px -4px rgba(0,0,0,0.92);
+    box-shadow: 7px 8px 16px -4px rgba(0,0,0,0.92); 
+}
+
+.title{
+    margin: 20px 0;
+}
+
+.flist{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.rbFr{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.rProfImg{
+    margin-right: 10px;
+    position: relative;
+}
+
+.proImg{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.rbOnline{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #1eff00;
+    position: absolute;
+    top: -2;
+    right: 0;
+    border: 2px solid white;
+}
+
+.rbProfName{
+    font-weight: 500;
+}
+
+.RightBarTitle{
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.rightbarinfoitme{
+    margin-bottom: 10px;
+}
+
+
+.infoKey{
+    font-weight: 500;
+    margin-right: 15px;
+    color: #555;
+}
+.infoValue{
+    font-weight: 300;
+}
+
+.followings{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.follow{
+    display: flex;
+    flex-direction: column;
+    margin: 0 0;
+    cursor: pointer;
+}
+
+.followingIMG{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.rbfollowbut{
+    margin: 50px 0 20px 10px;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    background-color: #e6e6e6;
+}
+
+.rbfollowbut:hover,
+.chatbut:hover{
+    background: #ffffff;
+}
+
+.fltext{
+    margin-left: 10px;
+    font-size: large;
+}
+
+.buttonsss{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.chatbut{
+    margin: 50px 0 20px 10px;
+    position: relative;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #e6e6e6;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+}
+
+.chaticon{
+    margin-left: 10px;
+}
+

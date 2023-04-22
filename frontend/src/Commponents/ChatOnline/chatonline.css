@@ -1,0 +1,29 @@
+.onlineFriend{
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.friendProImg{
+    position: relative;
+    margin-right: 10px;
+}
+
+.friendImg{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.onlinebadge{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: lime;
+    position: absolute;
+    border: 1px solid white;
+    top: 0;
+    right: 0;
+}

@@ -1,0 +1,39 @@
+.message{
+    margin: 10px 0 ;
+    display: flex;
+    flex-direction: column;
+}
+
+.messTop{
+    display: flex;
+}
+
+.messImg{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.messText{
+    padding: 10px;
+    border-radius: 20px;
+    background: #1877f2;
+    color: aliceblue;
+    max-width: 300px;
+}
+
+.messBottom{
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.message.own{
+    align-items: end;
+}
+
+.message.own .messText{
+    color: black;
+    background: #eeeeee;
+}

@@ -1,0 +1,79 @@
+.messenger{
+    height: calc(100vh -70px);
+    display: flex;
+}
+
+.menu{
+    flex: 3.5;
+}
+
+.chatbox{
+    flex: 5.5;
+}
+
+.chatonline{
+    flex: 3;
+}
+
+.menuwrapper,
+.boxwrapper,
+.onlinewrapper{
+    padding: 10px;
+    height: 100%;
+}
+
+.boxwrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+
+.chattop{
+    height: 550px;
+    overflow-y: scroll;
+    padding-right: 10px;
+}
+
+.menuin{
+    width: 90%;
+    padding: 10px 0;
+    border: none;
+    border-bottom: 1px solid blue;
+    caret-color: blue;
+}
+
+.menuin:focus{
+    outline: none;
+}
+
+.chatbottom{
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* position: fixed; */
+}
+
+.chatMessIn{
+    width: 80%;
+    height: 90px;
+    padding: 10px;
+}
+
+.sendButton{
+    width: 70px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.noConv{
+    position: absolute;
+    top: 10%;
+    font-size: 50px;
+    color: rgb(171, 171, 171);
+    cursor: default;
+    margin: 50px 100px 0 0;
+}
