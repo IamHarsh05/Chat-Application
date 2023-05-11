@@ -121,7 +121,7 @@ export default function Messenger() {
                     <div className="chattop">
                         {messages.map((m,i) => (
                             <div key={i} ref={scrollRef}>
-                                < Message message={m} own={m.sender === user._id}/>
+                                < Message message={m} own={m.sender === user._id} profPic={m.sender === user.profileImg}/>
                             </div>
                         ))}
                     </div>
