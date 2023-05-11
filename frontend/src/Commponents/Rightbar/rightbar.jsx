@@ -12,6 +12,7 @@ export default function Rightbar({user}) {
   const PF = process.env.REACT_APP_PUBLIC_FOLDER;
   
   const [friends, setFriends] = useState([]);
+  const [homefriends, setHomeFriends] = useState([]);
   
   // const [createConv, setCreateConv] = useState([]);
 
@@ -40,7 +41,7 @@ export default function Rightbar({user}) {
     const getHomeFriends = async () => {
       try {
         const friendList = await axios.get("/users/friends/" + currentuser?._id);
-        setFriends(friendList.data);
+        setHomeFriends(friendList.data);
       } 
       catch (err) {
         console.log(err);
@@ -96,7 +97,7 @@ export default function Rightbar({user}) {
         </div>
         <h4 className="title">Online Friends</h4>
         <ul className="flist">
-          {friends.map((u,i) => (
+          {homefriends.map((u,i) => (
             <Link key={i} to = {"/profile/"+u.username} style={{textDecoration:"none", color:"black"}}>
               < Online key={u.id} user = {u} />
             </Link>
@@ -140,7 +141,7 @@ export default function Rightbar({user}) {
             {friends.map((friend,i)=>(
               <Link key={i} to={"/profile/"+friend.username} style={{textDecoration:"none", color:"black"}}>
                 <div className="follow">
-                  <img src={friend.profileImg ? PF + "person/" + friend.profileImg : PF+"person/noAvatar.png"} alt="" className="followingIMG" />
+                  <img src={friend?.profileImg ? PF + "person/" + friend.profileImg : PF+"person/noAvatar.png"} alt="" className="followingIMG" />
                   <span className="followingUserName">{friend.username}</span>
                 </div>              
               </Link>

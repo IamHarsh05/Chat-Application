@@ -68,10 +68,12 @@
 .thumb{
     margin: 0 15px;
     cursor: pointer;
+    color: rgb(28, 111, 255);
 }
 
 .like{
     cursor: pointer;
+    color: red;
 }
 
 .likecounter{
